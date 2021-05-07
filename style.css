@@ -1,0 +1,85 @@
+:root {
+    --brackground-color: #272727;
+    --main-color: #faf9f9;
+    --highlight-color: #fed766;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--brackground-color);
+}
+
+.drag-area{
+    border : 2px dashed var(--main-color);
+    height: 500px;
+    width: 700px;
+
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag-area.hidden { 
+    display:none;
+}
+
+.drag-area.active{
+    border: 2px solid var(--main-color);
+}
+
+.drag-area .icon {
+    font-size: 100px;
+    color: var(--main-color);
+}
+
+.drag-area .icon .invalid{
+    color: var(--hightlight-color);
+}
+
+.drag-area header{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.drag-area span{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin: 10px 0 15px 0;
+}
+
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: var(--brackground-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
